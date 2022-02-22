@@ -4,14 +4,14 @@
 // 1) Select the section with an id of container without using querySelector.
 
 let container = document.getElementById("container"); //pass the ID => "container" as an arg
-console.log(container);
+
 // 2) Select the section with an id of container using querySelector.
 
-let container2 = document.querySelector("#container") //pass in the CSS element
+let containter2 = document.querySelector("#container") //pass in the CSS element
 
 // 3) Select all of the list items with a class of "second".
 
-let second = document.querySelectorAll(".second");
+let secondLi = document.querySelectorAll("li.second");
 
 // 4) Select a list item with a class of third, but only the list item inside of the ol tag.
 
@@ -41,11 +41,11 @@ li.innerText = "four";
 
 // 10) Append the li to the ul element.
 
-ul.appendChild(li);
+document.querySelector("ul").append(li);
 
 // 11) Loop over all of the lis inside the ol tag and give them a background color of "green".
 
-let liAll = document.querySelectorAll("ol li");
+let liAll = document.querySelectorAll("ol > li");
 for (const li of liAll) {
     li.style.backgroundColor = "green";
 }
